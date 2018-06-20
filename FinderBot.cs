@@ -15,14 +15,14 @@ class Solution
         {
             if (grid[i].Contains("p"))
             {
-                princessY = i;
-                princessX = grid[i].IndexOf('p');
+                princessX = i;
+                princessY = grid[i].IndexOf('p');
             }
 
             if (grid[i].Contains("m"))
             {
-                robotY = i;
-                robotX = grid[i].IndexOf('m');
+                robotX = i;
+                robotY = grid[i].IndexOf('m');
             }
         }
 
@@ -30,30 +30,28 @@ class Solution
         {
             if (robotX < princessX)
             {
-                System.Console.WriteLine("RIGHT");
+                System.Console.WriteLine("DOWN");
                 robotX++;
             }
 
             if (robotX > princessX)
             {
-                System.Console.WriteLine("LEFT");
+                System.Console.WriteLine("UP");
                 robotX--;
             }
 
             if (robotY < princessY)
             {
-                System.Console.WriteLine("UP");
+                System.Console.WriteLine("RIGHT");
                 robotY++;
             }
 
             if (robotY < princessY)
             {
-                System.Console.WriteLine("DOWN");
+                System.Console.WriteLine("LEFT");
                 robotY--;
             }
         }
-
-       
     }
 
     static void Main(String[] args)
