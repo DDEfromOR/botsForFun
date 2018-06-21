@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,6 +25,11 @@ class Solution
                 robotX = i;
                 robotY = grid[i].IndexOf('m');
             }
+        }
+        
+        if(princessX < 0 || princessY < 0 || robotX < 0 || robotY < 0)
+        {
+            return;
         }
 
         while (robotX != princessX || robotY != princessY)
