@@ -31,8 +31,10 @@ class Solution
         {
             return;
         }
+        
+        int moves = 0;
 
-        while (robotX != princessX || robotY != princessY)
+        while ((robotX != princessX || robotY != princessY) && moves < n)
         {
             if (robotX < princessX)
             {
@@ -57,6 +59,7 @@ class Solution
                 System.Console.WriteLine("LEFT");
                 robotY--;
             }
+            moves++;
         }
     }
 
