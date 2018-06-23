@@ -34,33 +34,32 @@ class Solution
         
         int moves = 0;
 
-        while ((robotX != princessX || robotY != princessY) && moves < n)
+        while (robotX != princessX || robotY != princessY)
         {
             if (robotX < princessX)
             {
-                System.Console.WriteLine("DOWN");
+                System.Console.WriteLine("RIGHT");
                 robotX++;
             }
 
             if (robotX > princessX)
             {
-                System.Console.WriteLine("UP");
+                System.Console.WriteLine("LEFT");
                 robotX--;
             }
 
             if (robotY < princessY)
             {
-                System.Console.WriteLine("RIGHT");
+                System.Console.WriteLine("DOWN");
                 robotY++;
             }
 
             if (robotY > princessY)
             {
-                System.Console.WriteLine("LEFT");
+                System.Console.WriteLine("UP");
                 robotY--;
             }
-            moves++;
-        }
+        }    
     }
 
     static void Main(String[] args)
