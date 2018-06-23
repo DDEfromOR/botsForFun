@@ -54,7 +54,7 @@ class Solution
                 robotY++;
             }
 
-            if (robotY < princessY)
+            if (robotY > princessY)
             {
                 System.Console.WriteLine("LEFT");
                 robotY--;
